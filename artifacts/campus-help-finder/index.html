@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Campus Help Finder</title>
+    <meta name="description" content="Find free, practical support for food, wellbeing, learning, family, and housing on campus." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Campus Help Finder" />
+    <meta property="og:description" content="A welcoming directory of free campus support for students." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Campus Help Finder" />
+    <meta name="twitter:description" content="A welcoming directory of free campus support for students." />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#resources">Skip to resources</a>
+    <header class="site-header">
+      <a class="brand" href="./" aria-label="Campus Help Finder home">
+        <span class="brand-mark" aria-hidden="true">CH</span>
+        <span>Campus <strong>Help Finder</strong></span>
+      </a>
+      <span class="header-note"><span class="status-dot" aria-hidden="true"></span> Here for your next step</span>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="page-title">
+        <div class="intro-copy">
+          <p class="eyebrow">A little support goes a long way</p>
+          <h1 id="page-title">You don’t have to<br /><em>figure it out alone.</em></h1>
+          <p class="intro-text">Start with what you need today. These free campus resources are here to help you keep moving forward.</p>
+        </div>
+        <div class="intro-aside" aria-hidden="true">
+          <span class="aside-line"></span>
+          <span>Good things<br />start with asking.</span>
+        </div>
+      </section>
+
+      <section class="directory" id="resources" aria-labelledby="directory-title">
+        <div class="directory-top">
+          <div>
+            <p class="eyebrow">Your campus, in your corner</p>
+            <h2 id="directory-title">Find the right kind of help</h2>
+          </div>
+          <p class="directory-note">Every resource listed here is free for students.</p>
+        </div>
+        <div class="search-wrap">
+          <label class="visually-hidden" for="resource-search">Search campus resources</label>
+          <span class="search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="10.8" cy="10.8" r="6.7"></circle><path d="m16 16 4.2 4.2"></path></svg>
+          </span>
+          <input id="resource-search" type="search" placeholder="Try “food”, “tutoring”, or “housing”" autocomplete="off" aria-controls="resource-list" />
+          <span class="search-hint" aria-hidden="true">SEARCH</span>
+        </div>
+        <div class="results-meta">
+          <p id="result-count" aria-live="polite">Showing all 6 resources</p>
+          <span class="results-rule" aria-hidden="true"></span>
+        </div>
+        <div class="resource-grid" id="resource-list"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <span class="empty-mark" aria-hidden="true">?</span>
+          <h3>No matches just yet</h3>
+          <p>Try a different word or search for a kind of support.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p><span class="footer-mark" aria-hidden="true">✳</span> Asking for help is a strong first step.</p>
+      <span>Campus Help Finder <span class="footer-separator">/</span> Student support directory</span>
+    </footer>
+  </body>
+</html>
